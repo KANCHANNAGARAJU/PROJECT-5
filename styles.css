@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.container {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ff7e5f;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    background-color: #ff7e5f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #f0f0f0;
+}
+
+li span {
+    flex: 1;
+    cursor: pointer;
+}
+
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li button.edit {
+    background-color: #ffc107;
+}
+
+li button.delete {
+    background-color: #dc3545;
+}
+
+li button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px 20px;
+        width: 90%;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    li {
+        padding: 10px 10px;
+    }
+}
